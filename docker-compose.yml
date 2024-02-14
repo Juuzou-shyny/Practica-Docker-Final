@@ -6,7 +6,7 @@ networks:
 services:
   mongodb:
     image: mongo:latest
-    env_file: .env-mongo
+    env_file: .env
     container_name: mongodb
     restart: always
     environment:
@@ -46,7 +46,7 @@ services:
   mongo-express:
     container_name: adminMongo_container
     image: mongo-express
-    env_file: .env-mongo
+    env_file: .env
     restart: always
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: ${MONGO_USER}

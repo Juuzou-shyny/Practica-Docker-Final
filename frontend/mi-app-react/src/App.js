@@ -1,5 +1,6 @@
 
 import './App.css';
+import Hola from './Hola';
 import Home from './Home';
 import Menu from './Menu';
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <div className="App">          
           <div className="App">
              <Menu />
+             <Hola/>
              <Home/>
           </div>               
       </div>

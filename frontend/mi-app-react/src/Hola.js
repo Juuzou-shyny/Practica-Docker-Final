@@ -4,17 +4,15 @@ function Hola() {
     const [mensaje, setMensaje] = useState('');
 
     useEffect(() => {
-        // Asegúrate de que la URL coincida con tu servidor Express
         fetch('http://localhost:3000/hola')
-            .then(response => response.text()) // Cambia .json() por .text() si esperas un string
-            .then(data => setMensaje(data)); // Almacena el string en el estado
+            .then(response => response.text())
+            .then(data => setMensaje(data));
     }, []);
 
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column' }}>
-        <h1>Página de Personas</h1>
-        <p>{mensaje}</p>
-    </div>
+        <h1>{mensaje}</h1>
+        </div>
     );
 }
 

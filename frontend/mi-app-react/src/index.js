@@ -6,19 +6,20 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Home';
 import Personas from './Personas';
-import Hola from './Hola';
+import Asignaturas from './Asignaturas';
 
 
 const router = createBrowserRouter([
   {path: "/", element: <Home/>},
   {path: "/personas", element: <Personas/>},
-  {path: "/hola", element: <Hola/>},
+  {path: "/asignaturas", element: <Asignaturas/>},
 
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router}/>
+   
     <App />
   </React.StrictMode>
 );
