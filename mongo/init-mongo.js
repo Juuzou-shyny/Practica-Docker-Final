@@ -1,4 +1,5 @@
 
+// Cambio a la base de datos objetivo
 db = db.getSiblingDB("my_database");
 
 // Creación de colecciones e inserción de documentos para 'personas'
